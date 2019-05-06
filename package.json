@@ -15,5 +15,13 @@
     "mocha": "^5.2.0",
     "protractor": "5.4.2",
     "webdriver-manager": "12.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4"
   }
 }
