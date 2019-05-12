@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --no-warnings node_modules/mocha/bin/mocha tests/api/*.js"
+    "test": "node --no-warnings node_modules/mocha/bin/mocha --opts configuration/mocha.opts tests/api/*.js"
   },
   "keywords": [],
   "author": "Vlad and Vasyl",
