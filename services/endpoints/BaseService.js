@@ -5,15 +5,11 @@ import{
 export class BaseService{
     basicGet(){
         let url = `https://rozetka.com.ua/`
-        logger.info(`Sending Get request to: ${url}`);
 
         return new Promise((resolve) => {
             axios({
                 method: 'get',
-                url:url,
-                data:{},
-                headers:{},
-                params:{}
+                url:url
             }).then((response) => {
                 resolve(response);
             }).catch((error) => {
