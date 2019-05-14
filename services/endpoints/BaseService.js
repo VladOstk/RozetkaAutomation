@@ -1,6 +1,4 @@
-import{
-    axios
-} from "../../tests/index";
+import { axios } from "../../tests/index";
 
 export class BaseService{
     basicGet(){

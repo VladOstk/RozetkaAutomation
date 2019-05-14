@@ -3,9 +3,10 @@ import {
     BaseService
 } from "../index";
 
-describe("Basic page functionality tests", () => {
+describe.only("Basic page functionality tests", () => {
 let baseService = new BaseService();
 let baseServiceResponse = {};
+
 before(async() => {
     baseServiceResponse = await baseService.basicGet();
 });

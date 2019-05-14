@@ -10,17 +10,18 @@
   "author": "Vlad and Vasyl",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-private-methods": "^7.2.1",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
     "axios": "^0.18.0",
     "chai": "^4.2.0",
+    "lodash": "^4.17.11",
+    "log4js": "^3.0.6",
     "mocha": "^5.2.0",
     "protractor": "5.4.2",
-    "webdriver-manager": "12.1.1",
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-private-methods": "^7.4.4",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/register": "^7.4.4"
+    "webdriver-manager": "12.1.1"
   }
-
 }
