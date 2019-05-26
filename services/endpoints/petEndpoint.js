@@ -2,23 +2,22 @@ import{
     axios
 } from "../../tests/index";
 
-export class BaseService{
-    basicGet(){
-        let url = `https://rozetka.com.ua/`
+export class petEndpoint{
+    addPet(){
+        let url = "https://petstore.swagger.io/v2";
+        url+="/pet";
 
         return new Promise((resolve) => {
             axios({
-                method: 'get',
-                url:url,
-                data:{},
-                headers:{},
-                params:{}
+                method: 'post',
+                url:url
+
             }).then((response) => {
                 resolve(response);
             }).catch((error) => {
                 resolve(error.response);
             });
         });
-
     }
+
 }

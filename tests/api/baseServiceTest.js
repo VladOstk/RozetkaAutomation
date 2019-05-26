@@ -1,7 +1,7 @@
 import {
     expect,
-    BaseService
 } from "../index";
+import { BaseService } from "./BaseService";
 
 describe("Basic page functionality tests", () => {
 let baseService = new BaseService;
