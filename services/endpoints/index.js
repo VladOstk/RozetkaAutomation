@@ -1,1 +1,2 @@
-export { BaseService } from "./baseService";
+export { BaseService } from "./BaseService";
+export { PetEndpoint } from "./PetEndpoint";

@@ -1,9 +1,7 @@
-import {
-    expect,
-    BaseService
-} from "../index";
+import { expect } from "../index";
+import { BaseService } from "../index";
 
-describe.only("Basic page functionality tests", () => {
+describe("Basic page functionality tests", () => {
 let baseService = new BaseService();
 let baseServiceResponse = {};
 
