@@ -1,8 +1,10 @@
 import{ axios } from "../../tests/index";
 
+const DATAPOINT = "pet/";
+
 export class PetEndpoint{
     getPet(petId){
-        let url = "https://petstore.swagger.io/v2/pet/";
+        let url = `${process.env.API_SERVICE}${DATAPOINT}`;
         url+=petId;
 
         return new Promise((resolve) => {

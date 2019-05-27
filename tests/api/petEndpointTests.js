@@ -4,6 +4,7 @@ describe("Pet endpoint api tests", () => {
     let petEndpoint = new PetEndpoint();
     let objectAccessor = new ObjectAccessor();
     let petEndpointResponse = {};
+
     before(async() => {
         petEndpointResponse = await petEndpoint.getPet("-9223372036854775808");
     });
@@ -12,11 +13,9 @@ describe("Pet endpoint api tests", () => {
         });
 
         it("Ensure GET pet contract", async() => {
-            const expectedProps = ["id", "name", "photoUrls", "tags"];
+            const expectedProps = ["id", "category","name", "photoUrls", "tags","status"];
             objectAccessor.compareActualAndExpectedProperties(expectedProps, petEndpointResponse.data);
         });
 
-
-        
     });
     
