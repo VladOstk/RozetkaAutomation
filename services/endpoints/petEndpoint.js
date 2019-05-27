@@ -1,8 +1,6 @@
-import{
-    axios
-} from "../../tests/index";
+import{ axios } from "../../tests/index";
 
-export class petEndpoint{
+export class PetEndpoint{
     getPet(petId){
         let url = "https://petstore.swagger.io/v2/pet/";
         url+=petId;

@@ -1,10 +1,8 @@
-import {
-    expect,
-} from "../index";
-import { petEndpoint } from "./petEndpoint";
+import { expect } from "../index";
+import { PetEndpoint } from "../index";
 
 describe("Pet endpoint api tests", () => {
-    let petEndpoint = new petEndpoint;
+    let petEndpoint = new PetEndpoint();
     let petEndpointResponse = {};
     before(async() => {
         petEndpointResponse = await petEndpoint.getPet("-9223372036854775808");
@@ -13,3 +11,4 @@ describe("Pet endpoint api tests", () => {
             expect(petEndpointResponse.status).to.eql(200, `status code is ${petEndpointResponse.status}`);
         });
     });
+    
