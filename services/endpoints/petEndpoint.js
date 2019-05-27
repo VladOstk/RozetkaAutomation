@@ -1,16 +1,16 @@
-import{ axios } from "../../tests/index";
+import { axios } from "../../tests/index";
 
 const DATAPOINT = "pet/";
 
-export class PetEndpoint{
-    getPet(petId){
+export class PetEndpoint {
+    getPet(petId) {
         let url = `${process.env.API_SERVICE}${DATAPOINT}`;
-        url+=petId;
+        url += petId;
 
         return new Promise((resolve) => {
             axios({
                 method: 'get',
-                url:url
+                url: url
             }).then((response) => {
                 resolve(response);
             }).catch((error) => {

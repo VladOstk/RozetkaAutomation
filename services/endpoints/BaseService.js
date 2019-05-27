@@ -1,13 +1,13 @@
 import { axios } from "../../tests/index";
 
-export class BaseService{
-    basicGet(){
+export class BaseService {
+    basicGet() {
         let url = `https://rozetka.com.ua/`
 
         return new Promise((resolve) => {
             axios({
                 method: 'get',
-                url:url
+                url: url
             }).then((response) => {
                 resolve(response);
             }).catch((error) => {

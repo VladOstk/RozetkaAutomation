@@ -2,7 +2,7 @@ import { expect } from "../tests/index";
 
 export class ObjectAccessor {
     compareActualAndExpectedProperties(expectedPropertiesList, actualResponseObjItem) {
-        for(let actualProperty in actualResponseObjItem) {
+        for (let actualProperty in actualResponseObjItem) {
             const idx = expectedPropertiesList.indexOf(actualProperty);
             expect(idx).not.to.eql(-1, `Response item\'s property with name \'${actualProperty}\' is not expected!`);
             expectedPropertiesList.splice(idx, 1);
