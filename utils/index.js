@@ -1,0 +1,1 @@
+export { ObjectAccessor } from "./objectAccessor";
