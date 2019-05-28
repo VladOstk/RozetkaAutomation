@@ -17,5 +17,6 @@ describe("Pet endpoint api tests", () => {
         objectAccessor.compareActualAndExpectedProperties(expectedProps, petEndpointResponse.data);
     });
 
+    
 
 });
