@@ -1,0 +1,76 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Protractor Edge Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+            //"stopOnEntry": false,
+            "sourceMaps": true,
+            "args": [
+                "${workspaceRoot}/configuration/protractor.edge.conf.js"
+            ],
+        },
+        {
+            "name": "Protractor Firefox Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+            //"stopOnEntry": false,
+            "sourceMaps": true,
+            "args": [
+                "${workspaceRoot}/configuration/protractor.firefox.conf.js"
+            ],
+        },
+        {
+            "name": "Protractor Chrome Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+            //"stopOnEntry": false,
+            "sourceMaps": true,
+            "args": [
+                "${workspaceRoot}/configuration/protractor.chrome.conf.js"
+            ],
+        },
+        {
+            "name": "Protractor Headless Chrome Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+            //"stopOnEntry": false,
+            "sourceMaps": true,
+            "args": [
+                "${workspaceRoot}/configuration/protractor.headless.chrome.conf.js"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--require",
+                "index.js",
+                "--timeout",
+                "240000",
+                "--reporter",
+                "spec",
+                "${workspaceFolder}/tests/api/*.js"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\index.js"
+        }
+    ]
+}
