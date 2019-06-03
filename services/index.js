@@ -1,1 +1,1 @@
-export * from "./endpoints";
+export {BaseService,PetEndpoint} from "./endpoints";

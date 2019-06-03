@@ -1,4 +1,6 @@
-import expect from 'chai';
+import { expect } from 'chai';
 import axios from 'axios';
 
-export * from '../services'
+export { expect, axios };
+export * from '../services';
+export * from '../utils';
