@@ -18,7 +18,7 @@
     "@babel/register": "^7.0.0",
     "axios": "^0.18.0",
     "chai": "^4.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "log4js": "^3.0.6",
     "mocha": "^5.2.0",
     "protractor": "5.4.2",
